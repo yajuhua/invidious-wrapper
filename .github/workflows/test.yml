@@ -12,6 +12,12 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Test with Maven
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Maven
+        run: mvn --version
+
+      - name: Run tests
         run: |
-          mvn test
+            mvn test
