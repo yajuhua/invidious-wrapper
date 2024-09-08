@@ -40,6 +40,22 @@ public class Invidious {
         }
     }
 
+    public static String getApi() {
+        return api;
+    }
+
+    public static Proxy getProxy() {
+        return proxy;
+    }
+
+    public static void setProxy(Proxy proxy) {
+        Invidious.proxy = proxy;
+    }
+
+    public static void setDownloader(Downloader downloader) {
+        Invidious.downloader = downloader;
+    }
+
     /**
      * 初始化时设置下载器(可选)
      * @param downloader
