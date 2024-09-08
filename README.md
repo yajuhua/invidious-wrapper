@@ -51,3 +51,9 @@ VideosDTO videosDTO = Videos.get(id);
 String videoId = "oXaxcSBRWVA";
 VideoDetailDTO videoDetailDTO = Video.get(videoId);
 ```
+
+#### Search
+```java
+String username = "@laogao";
+List<SearchDTO> searchDTOS = Search.get(userName);
+```
